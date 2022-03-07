@@ -1,0 +1,35 @@
+<center>
+    <form action="" id="form">
+        <table width="400px" cellpadding="10px">
+            <tr bgcolor="lightgray">
+                <th colspan="2">
+                    <h3>Kalkulatorku</h3>
+                </th>
+            </tr>
+            <tr>
+                <td width="30%">Angka 1</td>
+                <td width="70%"><input type="text" name="a1"></td>
+            </tr>
+            <tr>
+                <td width="30%">Angka 2</td>
+                <td width="70%"><input type="text" name="a2"></td>
+            </tr>
+            <tr>
+                <td width="30%">Hasil</td>
+                <td width="70%"><input type="text" name="hasil" disabled></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <th colspan="2">
+                    <input type="button" value="+" onclick="tambah()">
+                    <input type="button" value="-" onclick="kurang()">
+                    <input type="button" value="X" onclick="kali()">
+                    <input type="button" value="/" onclick="bagi()">
+                    <input type="button" value="^" onclick="pangkat()">
+                    <input type="button" value="Batal" onclick="kosongAll()">
+                </th>
+            </tr>
+        </table>
+    </form>
+</center>
+
+<script src="script.js"></script>
