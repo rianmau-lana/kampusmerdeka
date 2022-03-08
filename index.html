@@ -1,0 +1,47 @@
+<script>
+    //-----------------membuat class------------------
+    class Gempa {
+        constructor(lokasi, skala) {
+            this.lokasi = lokasi;
+            this.skala = skala;
+        }
+        
+        dampak() {
+            let dampak = "";
+            if (this.skala >= 0 && this.skala <= 2) {
+                dampak = "tidak terasa";
+            } else if (this.skala > 2 && this.skala <= 4) {
+                dampak = "bangunan retak-retak";
+            } else if (this.skala > 4 && this.skala <= 6) {
+                dampak = "bangunan roboh";
+            } else if(this.skala > 6) {
+                dampak = "bangunan roboh dan berpotensi tsunami";
+            } else {
+                dampak = "-";
+            }
+            document.write(`lokasi Gempa: ${this.lokasi} <br>
+            Skala: ${this.skala} SR <br>
+            Dampak: ${dampak} <hr>`);
+        }
+    }
+    let tokyo = new Gempa('Tokyo', 7);
+    let busan = new Gempa('Busan', 3);
+    let banten = new Gempa('Banten', 1);
+    let seoul = new Gempa('Seoul', 6);
+    let paris = new Gempa('Paris', 4);
+    let gangnam = new Gempa('Gangnam', 2);
+    let itaewon = new Gempa('Itaewon', 5);
+    let gwangju = new Gempa('Gwangju', 4);
+    let bangkok = new Gempa('Bangkok', 3);
+    let milan = new Gempa('Milan', 9);
+    tokyo.dampak();
+    busan.dampak();
+    banten.dampak();
+    seoul.dampak();
+    paris.dampak();
+    gangnam.dampak();
+    itaewon.dampak();
+    gwangju.dampak();
+    bangkok.dampak();
+    milan.dampak();
+</script>
