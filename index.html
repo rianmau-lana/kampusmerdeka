@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Layouting</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img style="height: 500px;" src="https://www.wpexplorer.com/wp-content/uploads/best-wordpress-slider-plugins-animated-responsive.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="height: 500px;" src="https://soliloquywp.com/wp-content/uploads/2019/01/nb_eca_cover.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="height: 500px;" src="https://soliloquywp.com/wp-content/uploads/2018/11/nb_ist_cover.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="navbarColor02">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home
+                                        <span class="visually-hidden">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card m-2" style="width: 5cm;">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="m-3">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#accordion">Company Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#table">Pendidikan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#card">Gallery</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content m-3">
+                        <div class="tab-pane fade active show" id="accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Company Profile
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya oleh masyarakat Indonesia di bidang pendidikan
+                                                dan
+                                                peningkatan sumber daya manusia selama lebih dari 24 tahun. Alumni-alumninya telah berkiprah dan diakui kualitas
+                                                kerja
+                                                dan integritasnya oleh dunia usaha.</p>
+                                            <p>NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan dan pelatihan IT (Information
+                                                Technology). Kami berkomitmen menjadi partner perusahaan Anda dalam mengembangkan kemampuan serta keahlian SDM di
+                                                bidang
+                                                IT. Dengan komitmen tersebut, kami mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.</p>
+                                            <p>Di Era Industri 4.0 saat ini, teknologi informasi berkembang sangat cepat, oleh karena itu pengembangan sumber daya
+                                                manusia di bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF COMPUTER menjadi jawaban yang tepat atas
+                                                kebutuhan pengembangan kompetensi IT. Sehingga kami selalu berusaha untuk terus berinovasi terhadap teknologi
+                                                terbaru.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Visi Misi
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Visi <br>
+                                                Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi informasi dan komunikasi di
+                                                berbagai wilayah indonesia.</p>
+                                            <p>Misi <br>
+                                                Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi, berkarakter profesional,
+                                                kompeten, mengedepankan integritas dan tanggung jawab sosial, dengan mengembangkan dan menyediakan produk produk
+                                                pendidikan dan pelatihan teknologi informasi dan komunikasi prima.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Deskripsi Bisnis
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi (IT Training) yang
+                                                dibagi menjadi lima produk. <br>
+                                                Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu :</p>
+                                            <ul>
+                                                <li>Public Class, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang berbasis Linux maupun
+                                                    Windows.</li>
+                                                <li>Exclusive Class, merupakan paket training yang diberikan kepada customer dengan durasi 6-8 jam perhari dengan
+                                                    jumlah
+                                                    peserta minimal 2 orang dan pelaksanaan pelatihannya di NF Computer.</li>
+                                                <li>In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan perusahaan-perusahaan</li>
+                                            </ul>
+                                            <p>Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang dikelola secara profesional oleh NF COMPUTER yaitu
+                                                :</p>
+                                            <ul>
+                                                <li>Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah dimana NF COMPUTER bekerjasama dalam hal :
+                                                    Kerjasama pembangunan Lab Komputer, Pengajaran Komputer dan kombinasi antara keduanya.</li>
+                                                <li>Usulan Produk lain: Produk-produk yang menurut lokasi diminati oleh pasar tapi belum ada dalam daftar produk
+                                                    pelatihan
+                                                    dan pendidikan NF COMPUTER, dapat diajukan oleh cabang untuk menjadi produk yang dipertimbangkan sebagai produk
+                                                    dan akan
+                                                    menjadi bagian dari penyelenggaraan pelatiahan dan pendidikan di cabang tersebut pada periode yang dianggap
+                                                    tepat oleh
+                                                    NF COMPUTER.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="table">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Jenjang</th>
+                                    <th>Pendidikan</th>
+                                </tr>
+                                <tr>
+                                    <td>TK</td>
+                                    <td>TK Ummul Muminin Bandung</td>
+                                </tr>
+                                <tr>
+                                    <td>SD</td>
+                                    <td>SDN Babakan Jati 2 Bandung</td>
+                                </tr>
+                                <tr>
+                                    <td>SMP</td>
+                                    <td>SMPN 31 Bandung</td>
+                                </tr>
+                                <tr>
+                                    <td>SMA</td>
+                                    <td>SMKN 4 Bandung</td>
+                                </tr>
+                                <tr>
+                                    <td>S1</td>
+                                    <td>STMIK Amik Bandung</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="card">
+                            <center>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://img.lovepik.com/original_origin_pic/18/12/05/f32db42bba96272755aefe4f88cce3e8.png_wh860.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Ini Burung Hantu</p>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="col-sm-2">
+                <div class="card m-2" style="width: 5cm;">
+                    <div class="card-header">
+                        Tautan
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="w3schools.com">W3Schools</a></li>
+                        <li class="list-group-item"><a href="php.net">PHP</a></li>
+                        <li class="list-group-item"><a href="laravel.com">Laravel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="alert alert-secondary" role="alert">
+                    Copyright &copy; 2022 By Rian Maulana
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</html>
