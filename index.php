@@ -1,3 +1,16 @@
+<?php
+
+    function cekLogin($username, $password) {
+        if ($username == 'admin' && $password == 'mimin') {
+            header("Location: home.php");
+            exit;
+        } else {
+
+            echo "<script onclick('history.go(-1)')>alert('Username atau Password salah')</script>";
+        }
+    }
+    if (isset($_POST['login'])) cekLogin($_POST['username'], $_POST['password']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +47,7 @@
                         <!-- Submit button -->
                         <div class="d-grid gap-2">
 
-                            <input type="submit" name="login" value="Login" class="btn btn-primary btn-lg">
+                            <input type="submit" name="login" value="Login" class="btn btn-primary btn-lg" onclick="<?php cekLogin($username, $password) ?>">
                         </div>
 
                     </form>
@@ -45,17 +58,3 @@
 </body>
 
 </html>
-
-<?php
-if (isset($_POST['login'])) {
-    $username = $_REQUEST['username'];
-    $password = $_REQUEST['password'];
-
-    // function cekLogin($username, $password) {
-        if ($username == 'admin' && $password == 'mimin') {
-            header("Location: home.php");
-        }
-        echo "<script>alert('Username atau Password salah')</script>";
-    // }
-}
-?>
